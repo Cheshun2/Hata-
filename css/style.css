@@ -11,6 +11,7 @@
 html {
   font-size: 14px;
   font-family: Arial, sans-cerif;
+  cursor: url(../pictures/cursor.cur), auto;
 }
 body {
   margin: 0;
@@ -40,6 +41,9 @@ body {
 }
 .top-menu li {
   display: inline-block;
+}
+a:hover{
+  cursor: url(../pictures/cursor-hover.cur), auto;
 }
 .menu {
   float: left;
@@ -287,6 +291,7 @@ tbody tr:hover td{
 }
 tbody tr:hover{
   background-color: #fd8300;
+  cursor: url(../pictures/cursor-hover.cur), auto;
 }
 .tta{
   text-align: right;
@@ -321,6 +326,12 @@ tbody{
   font-weight: bold;
   line-height: 24px;
   color: #fd8300;
+  transition: all 0.3s ease;
+}
+.more:hover{
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 figure {
   float: left;
