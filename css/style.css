@@ -84,7 +84,7 @@ a.fb {
   width: 10px;
   height: 19px;
   transition: all 1s ease;
-  background-position: -21px -1px;
+  background-position: -21px 0px;
 }
 a.tw {
   width: 21px;
@@ -390,6 +390,9 @@ aside a {
   margin: 0;
   list-style: none;
   background-color: #e4e4ec;
+}
+.aside-menu>li{
+  border-bottom: 1px solid #cdcddd;
 }
 .aside-menu li {
   position: relative;
