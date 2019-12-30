@@ -57,6 +57,7 @@ a:hover{
   text-decoration: none;
   color: #b1b1d2;
   margin-left: 13px;
+  letter-spacing: 2px;
 }
 .menu a:hover {
   color: #fd8300;
@@ -349,6 +350,9 @@ h3 {
 }
 h3:hover {
   text-decoration: underline;
+}
+h3>a{
+  text-decoration: none;
 }
 h3 sup {
   font-size: 9px;
