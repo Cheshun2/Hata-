@@ -12,8 +12,8 @@
 <body>
   <div class="bottom-shadow">
     <header>
-      <nav class="top-menu">
-        <div class="wrapper">
+      <nav class="top-menu clear">
+        <div class="wrapper clear">
           <ul class="menu">
             <li><a href="index.html">Головна</a></li>
             <li><a href="#">Про компанію</a></li>
@@ -28,7 +28,7 @@
           </ul>
         </div>
       </nav>
-      <div class="header-contacts wrapper">
+      <div class="header-contacts wrapper clear">
         <div class="row">
           <div class="colon logo">
             <a href="index.html"><img src="pictures/logo.png" alt="Логотип будівельної компанії Хата плюс" /></a>
@@ -37,30 +37,89 @@
             <p class="tell">
               <a href="tel:+380964750547">+38(096) 47-505-47</a>
             </p>
-            <p><a href="tel:+380971002525">+38(097) 100-25-25</a></p>
+            <p>
+              <a href="tel:+380971002525">+38(097) 100-25-25</a>
+            </p>
           </div>
           <div class="colon mail vertical-line">
             <p class="mail-name">
-              <a href="mailto:hataplus@hata.com.ua" class="mail-text">hataplus@hata.com.ua</a>
+              <a href="mailto:hataplus@hata.com.ua" class="mail-text mail-sprite">hataplus@hata.com.ua</a>
             </p>
             <p class="skype-name">
               <a href="skype:hataplus" class="skype-text">hataplus</a>
             </p>
           </div>
-          <div class="colon button">
-            <a href="#" class="button-text">Замовити дзвінок</a>
-          </div>
         </div>
       </div>
     </header>
   </div>
-  <div class="wrapper">
+  <div class="wrapper clear">
     <main>
-      <h1>В розробці</h1>
+      <h1 class="price-name">Контакти</h1>
+      <div class="clear bottom-line">
+        <div class="contact-column">
+          <div class="our-office">
+            <p class="strong">Наш офіс</p>
+            <a href="#" class="adress"> с. Війтівці, Хмельницька обл. 27500</a>
+            <p class="number">
+              <a href="tel:+380971002525">+38(097) 100-25-25</a>
+            </p>
+            <p class="number">
+              <a href="tel:+380971002525">+38(097) 100-25-25</a>
+            </p>
+            <p class="mail-name">
+              <a href="mailto:hataplus@hata.com.ua" class="mail-text">hataplus@hata.com.ua</a>
+            </p>
+          </div>
+          <div class="consultation">
+            <p class="strong">Консультація</p>
+            <p class="adress">менеджер:</p>
+            <p class="number"><a href="tel:+380671231005">+38(067) 123-10-05</a></p>
+            <p class="adress">директор:</p>
+            <p class="number"><a href="tel:+380689502791">+38(068) 950-27-91</a></p>
+          </div>
+        </div>
+        <div class="contact-column">
+          <div class="details">
+            <p class="strong">Реквізити</p>
+            <p class="adress">ЄДРПОУ 60045123, ІПН 991097555173
+              Св.№59904423</p>
+            <p class="adress">Р/р 11137539962221,
+              Банк ХФ ПАТ КБ «ПРИВАТБАНК»</p>
+          </div>
+        </div>
+      </div>
+      <div class="registr">
+        <div class="map">
+
+        </div>
+        <form action="send.php" class="registr-form">
+          <p class="strong">Форма зворотнього зв’язку</p>
+          <p class="input-line clear">
+              <input type="text" id="login" name="login" placeholder="Ваше ім’я" maxlength="30" class="mini-input style-input">
+              <label for="login"></label>
+              <input type="tel" id="phone-login" name="phone" placeholder="Телефон" maxlength="15" class="mini-input style-input">
+              <label for="phone-login"></label>
+          </p>
+          <p class="input-line">
+            <input type="text" name="theme" id="theme" placeholder="Тема повідомлення" maxlength="50" class="style-input">
+            <label for="theme"></label>
+          </p>
+          <p class="input-line">
+            <textarea name="meseng" id="meseng" maxlength="300" placeholder="Введіть текст повідомлення"></textarea>
+          </p>
+          <p class="input-line">
+            <input type="submit" value="Відправити" name="send" class="button-send" id="send-form">
+            <label for="send-form"></label>
+            <input type="checkbox" name="news" id="send-news" class="style-checkbox" value="send-news">
+            <label for="send-news">Я бажаю отримувати останні новини</label>
+          </p>
+        </form>
+      </div>
     </main>
   </div>
   <footer>
-    <div class="footer-colon wrapper">
+    <div class="footer-colon wrapper clear">
       <div class="row">
         <div class="bottom-menu colon">
           <p>
@@ -95,7 +154,7 @@
         </div>
         <div class="colon mail">
           <p class="mail-name">
-            <a href="mailto:hataplus@hata.com.ua" class="mail-text">hataplus@hata.com.ua</a>
+            <a href="mailto:hataplus@hata.com.ua" class="mail-text mail-sprite">hataplus@hata.com.ua</a>
           </p>
           <p class="skype-name">
             <a href="skype:hataplus" class="skype-text">hataplus</a>
