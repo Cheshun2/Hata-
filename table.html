@@ -14,6 +14,8 @@
     <header>
       <nav class="top-menu clear">
         <div class="wrapper clear">
+          <input type="checkbox" name="burger" id="burger" class="burger">
+          <label for="burger"></label>
           <ul class="menu">
             <li><a href="index.html">Головна</a></li>
             <li><a href="#">Про компанію</a></li>
@@ -29,9 +31,12 @@
         </div>
       </nav>
       <div class="header-contacts wrapper clear">
-        <div class="row">
+        <div class="row colon-adaptive">
           <div class="colon logo">
             <a href="index.html"><img src="pictures/logo.png" alt="Логотип будівельної компанії Хата плюс" /></a>
+          </div>
+          <div class="colon button">
+            <a href="#" class="button-text">Замовити дзвінок</a>
           </div>
           <div class="colon number">
             <p class="tell">
@@ -46,9 +51,6 @@
             <p class="skype-name">
               <a href="skype:hataplus" class="skype-text">hataplus</a>
             </p>
-          </div>
-          <div class="colon button">
-            <a href="#" class="button-text">Замовити дзвінок</a>
           </div>
         </div>
       </div>
@@ -66,68 +68,70 @@
           Послуга може бути надана кожному з наших гостей, незалежно від
           терміну проживання в готелі та категорії обраного номера.
         </p>
-        <table>
-          <thead>
-            <tr>
-              <td>Назва котеджу</td>
-              <td>Загальна площа м.кв.</td>
-              <td>Кількість кімнат</td>
-              <td>Гараж</td>
-              <td class="tta">Ціна</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Hamilton Paradise</td>
-              <td>392</td>
-              <td>5</td>
-              <td>2</td>
-              <td class="tta">45 000 $</td>
-            </tr>
-            <tr>
-              <td>Montreal Hourse House</td>
-              <td>295</td>
-              <td>3</td>
-              <td>1</td>
-              <td class="tta">29 750 $</td>
-            </tr>
-            <tr>
-              <td>Edmenton</td>
-              <td>338</td>
-              <td>2</td>
-              <td>2</td>
-              <td class="tta">53 200 $</td>
-            </tr>
-            <tr>
-              <td>Calgary Skyliner</td>
-              <td>249</td>
-              <td>2</td>
-              <td>1</td>
-              <td class="tta">31 000 $</td>
-            </tr>
-            <tr>
-              <td>Quebec Enterprices</td>
-              <td>392</td>
-              <td>4</td>
-              <td>2</td>
-              <td class="tta">110 000 $</td>
-            </tr>
-            <tr>
-              <td>Alberta Maria</td>
-              <td>349</td>
-              <td>1</td>
-              <td>3</td>
-              <td class="tta">67 500 $</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <td>Назва котеджу</td>
+                <td>Загальна площа м.кв.</td>
+                <td>Кількість кімнат</td>
+                <td>Гараж</td>
+                <td class="tta">Ціна</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hamilton Paradise</td>
+                <td>392</td>
+                <td>5</td>
+                <td>2</td>
+                <td class="tta">45 000 $</td>
+              </tr>
+              <tr>
+                <td>Montreal Hourse House</td>
+                <td>295</td>
+                <td>3</td>
+                <td>1</td>
+                <td class="tta">29 750 $</td>
+              </tr>
+              <tr>
+                <td>Edmenton</td>
+                <td>338</td>
+                <td>2</td>
+                <td>2</td>
+                <td class="tta">53 200 $</td>
+              </tr>
+              <tr>
+                <td>Calgary Skyliner</td>
+                <td>249</td>
+                <td>2</td>
+                <td>1</td>
+                <td class="tta">31 000 $</td>
+              </tr>
+              <tr>
+                <td>Quebec Enterprices</td>
+                <td>392</td>
+                <td>4</td>
+                <td>2</td>
+                <td class="tta">110 000 $</td>
+              </tr>
+              <tr>
+                <td>Alberta Maria</td>
+                <td>349</td>
+                <td>1</td>
+                <td>3</td>
+                <td class="tta">67 500 $</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <p class="pricep">Час заселення з 14-00, виїзд до 12-00.</p>
         <p class="pricep pricep-bottom">
           Можлива погодинна оренда котеджу (мінімальний час оренди - 5 днів).
         </p>
         <a href="#" class="more price-more">Ознайомитись з правилами проживання</a>
       </section>
-      <section class="row">
+      <section class="row figure-adaptive">
         <h2 class="second-name">Популярні проекти</h2>
         <figure class="colon">
           <img src="pictures/edmonton.png" alt="Будинок Edmonton" />
@@ -170,7 +174,21 @@
   </div>
   <footer>
     <div class="footer-colon wrapper clear">
-      <div class="row">
+      <div class="row colon-adaptive">
+        <div class="colon number">
+          <p class="tell">
+            <a href="tel:+380971002525">+38(097) 100-25-25</a>
+          </p>
+          <p><a href="tel:+380971002525">+38(097) 100-25-25</a></p>
+        </div>
+        <div class="colon mail">
+          <p class="mail-name">
+            <a href="mailto:hataplus@hata.com.ua" class="mail-text mail-sprite">hataplus@hata.com.ua</a>
+          </p>
+          <p class="skype-name">
+            <a href="skype:hataplus" class="skype-text">hataplus</a>
+          </p>
+        </div>
         <div class="bottom-menu colon">
           <p>
             <a href="#">Будинки</a>
@@ -194,20 +212,6 @@
           </p>
           <p>
             <a href="#">Контакти</a>
-          </p>
-        </div>
-        <div class="colon number">
-          <p class="tell">
-            <a href="tel:+380971002525">+38(097) 100-25-25</a>
-          </p>
-          <p><a href="tel:+380971002525">+38(097) 100-25-25</a></p>
-        </div>
-        <div class="colon mail">
-          <p class="mail-name">
-            <a href="mailto:hataplus@hata.com.ua" class="mail-text mail-sprite">hataplus@hata.com.ua</a>
-          </p>
-          <p class="skype-name">
-            <a href="skype:hataplus" class="skype-text">hataplus</a>
           </p>
         </div>
       </div>

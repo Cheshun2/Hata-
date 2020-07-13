@@ -6,13 +6,15 @@
   <meta name="viewport"
     content="width=device-width, user-scalable=yes, initial-scale=1.0, maximal-scale=2.0 minimal-scale=1.0">
   <title>Хата плюс - будівельна компанія</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 
 <body>
   <header>
     <nav class="top-menu clear">
       <div class="wrapper clear">
+        <input type="checkbox" name="burger" id="burger" class="burger">
+        <label for="burger"></label>
         <ul class="menu">
           <li><a href="index.html">Головна</a></li>
           <li><a href="#">Про компанію</a></li>
@@ -28,9 +30,12 @@
       </div>
     </nav>
     <div class="header-contacts wrapper clear">
-      <div class="row">
+      <div class="row colon-adaptive">
         <div class="colon logo">
           <a href="index.html"><img src="pictures/logo.png" alt="Логотип будівельної компанії Хата плюс" /></a>
+        </div>
+        <div class="colon button">
+          <a href="#" class="button-text">Замовити дзвінок</a>
         </div>
         <div class="colon number">
           <p class="tell">
@@ -45,9 +50,6 @@
           <p class="skype-name">
             <a href="skype:hataplus" class="skype-text">hataplus</a>
           </p>
-        </div>
-        <div class="colon button">
-          <a href="#" class="button-text">Замовити дзвінок</a>
         </div>
       </div>
     </div>
@@ -68,6 +70,26 @@
     </div>
   </header>
   <div class="wrapper clear">
+    <div class="row aside">
+      <aside>
+        <p>Категорії проектів</p>
+        <ul class="aside-menu">
+          <li><a href="#">Генеральний план</a></li>
+          <li class="li-sub-menu">
+            <a href="#">Навколишнє середовище</a>
+            <ul class="sub-menu">
+              <li><a href="#">Продані</a></li>
+              <li><a href="#">Заброньованні</a></li>
+              <li><a href="#">В процесі будівництва</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Умови придбання</a></li>
+          <li><a href="#">Загородні котеджі</a></li>
+          <li><a href="#">Інфраструктура</a></li>
+          <li><a href="#">Готові будинки</a></li>
+        </ul>
+      </aside>
+    </div>
     <main class="main">
       <section class="content">
         <h1 class="main-name">Компанія “Хата Плюс”</h1>
@@ -87,7 +109,7 @@
         </p>
         <a href="#" class="more">Детальніше про нас</a>
       </section>
-      <section class="row">
+      <section class="row figure-adaptive">
         <h2 class="second-name">Популярні проекти</h2>
         <figure class="colon">
           <img src="pictures/edmonton.png" alt="Будинок Edmonton" />
@@ -118,30 +140,24 @@
         </figure>
       </section>
     </main>
-    <div class="row aside">
-      <aside>
-        <p>Категорії проектів</p>
-        <ul class="aside-menu">
-          <li><a href="#">Генеральний план</a></li>
-          <li class="li-sub-menu">
-            <a href="#">Навколишнє середовище</a>
-            <ul class="sub-menu">
-              <li><a href="#">Продані</a></li>
-              <li><a href="#">Заброньованні</a></li>
-              <li><a href="#">В процесі будівництва</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Умови придбання</a></li>
-          <li><a href="#">Загородні котеджі</a></li>
-          <li><a href="#">Інфраструктура</a></li>
-          <li><a href="#">Готові будинки</a></li>
-        </ul>
-      </aside>
-    </div>
   </div>
   <footer>
     <div class="footer-colon wrapper clear">
-      <div class="row">
+      <div class="row colon-adaptive">
+        <div class="colon number">
+          <p class="tell">
+            <a href="tel:+380971002525">+38(097) 100-25-25</a>
+          </p>
+          <p><a href="tel:+380971002525">+38(097) 100-25-25</a></p>
+        </div>
+        <div class="colon mail">
+          <p class="mail-name">
+            <a href="mailto:hataplus@hata.com.ua" class="mail-text mail-sprite">hataplus@hata.com.ua</a>
+          </p>
+          <p class="skype-name">
+            <a href="skype:hataplus" class="skype-text">hataplus</a>
+          </p>
+        </div>
         <div class="bottom-menu colon">
           <p>
             <a href="#">Будинки</a>
@@ -165,20 +181,6 @@
           </p>
           <p>
             <a href="#">Контакти</a>
-          </p>
-        </div>
-        <div class="colon number">
-          <p class="tell">
-            <a href="tel:+380971002525">+38(097) 100-25-25</a>
-          </p>
-          <p><a href="tel:+380971002525">+38(097) 100-25-25</a></p>
-        </div>
-        <div class="colon mail">
-          <p class="mail-name">
-            <a href="mailto:hataplus@hata.com.ua" class="mail-text mail-sprite">hataplus@hata.com.ua</a>
-          </p>
-          <p class="skype-name">
-            <a href="skype:hataplus" class="skype-text">hataplus</a>
           </p>
         </div>
       </div>

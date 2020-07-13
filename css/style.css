@@ -47,6 +47,9 @@ body {
 a:hover{
   cursor: url(../pictures/cursor-hover.cur), auto;
 }
+.burger{
+  display: none;
+}
 .menu {
   float: left;
   margin-left: -13px;
@@ -67,8 +70,6 @@ a:hover{
 .social a {
   margin-right: 13px;
   display: block;
-}
-.social a {
   background: url(../pictures/sprait.png) no-repeat left top;
 }
 a.fb:hover {
@@ -105,6 +106,11 @@ a.inst {
 .header-contacts {
   padding: 30px 0;
 }
+footer .number,
+footer .mail{
+  float: right;
+}
+
 .number p,
 .mail p {
   margin: 0;
@@ -183,7 +189,8 @@ a.inst {
   text-decoration: none;
   font-weight: bold;
 }
-.button {
+.colon.button {
+  float: right;
   text-align: right;
 }
 .button-text {
@@ -198,9 +205,7 @@ a.inst {
   transition: 1s ease all;
 }
 .button-text:hover {
-  border: 5px #eccc1a solid;
-  transition: 1s ease all;
-  transform: rotate(360deg);
+  box-shadow: 0 0 5px #1f1f56;
 }
 .pm {
   max-height: 200px;
@@ -337,9 +342,7 @@ tbody{
   text-decoration: none;
   transition: all 0.3s ease;
 }
-figure {
-  float: left;
-}
+
 h3 {
   font-size: 14px;
   font-weight: bold;
@@ -429,6 +432,7 @@ aside a {
   background-color: #fd8300;
 }
 .sub-menu {
+  transition: all 1s ease;
   display: none;
   list-style: none;
   padding: 0;
@@ -598,5 +602,159 @@ input:focus{
   border: 2px solid #000;
   border-top: none;
   border-right: none;
-  transform: rotate(-45deg)
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 990px){
+  .wrapper{
+    padding: 0 20px;
+  }
+  .colon-adaptive{
+    max-width: 500px;
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+  .colon{
+    margin-bottom: 20px;
+  }
+  .colon.button{
+    float: left;
+    height: 61px;
+    vertical-align: middle;
+  }
+  .aside{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .main{
+    max-width: 100%;
+  }
+  figure.colon{
+    display: inline-block;  
+    float: none;
+  }
+  
+  .figure-adaptive{
+    text-align: justify;
+  }
+  .figure-adaptive:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    background-color: #000;
+  }
+  .map,
+  .registr-form{
+    display: block;
+    width: 100%;
+  }
+  .map iframe{
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 850px){
+  .table-wrap{
+    overflow: scroll;
+  }
+  table{
+    width: 850px;
+  }
+  .price-name{
+    text-align: center;
+  }
+  .contact-column{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .menu{
+    display: none;
+  }
+  .burger{
+    position: absolute;
+    display: inline-block;
+    top: 15px;
+    left: 20px;
+    width: 30px;
+    height: 20px;
+    visibility: hidden;
+    margin: 0;
+  }
+  .burger+label{
+    display: inline-block;
+    position: relative; 
+    margin: 23px 0;
+  }
+  .burger+label,
+  .burger+label:before,
+  .burger+label:after{
+    content: '';
+    left: 0;
+    width: 30px;
+    height: 5px;
+    background-color: #b1b1d2;
+    border-radius: 4px;
+  }
+  .burger+label:before{
+    position: absolute;
+    top: -8px;
+  }
+  .burger+label:after{
+    position: absolute;
+    top: 8px;
+  }
+  .burger:checked~.menu{
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #1f1f56;
+    z-index: 5;
+  }
+  .menu li{
+    display: block;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .colon,
+  footer .colon,
+  .colon.button{
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .vertical-line:before{
+    display: none;
+  }
+  .bottom-menu p,
+  .about p{
+    padding-left: 30px;
+  }
+  .mini-input{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;  
+  }
+  .button-send{
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 440px){
+  .contact-column{
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .details{
+    margin: 0;
+  }
+
 }
