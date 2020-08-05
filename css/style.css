@@ -407,6 +407,9 @@ aside a {
 .aside-menu li {
   position: relative;
 }
+.aside-menu li:last-child{
+  border: none; 
+}
 .aside-menu > li:before {
   content: "";
   position: absolute;
@@ -650,6 +653,9 @@ input:focus{
     display: block;
     width: 100%;
   }
+  .registr-form{
+    margin-bottom: 25px;
+  }
   .map iframe{
     padding: 0;
   }
@@ -777,5 +783,4 @@ input:focus{
   .details{
     margin: 0 auto;
   }
-
 }
